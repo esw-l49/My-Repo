@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>mediaShow</title>
+</head>
+
+<body>
+    <h3>This a picture</h3>
+    <img src="https://raw.githubusercontent.com/mdn/learning-area/master/html/multimedia-and-embedding/images-in-html/dinosaur_small.jpg" width="200px" height="171px" alt="Picture cannot be displayed">
+    <br>
+    <video controls>
+        <source src="../Media/rabbit320.mp4" type="video/mp4">
+        <track src="../Media/rabbit.vtt" kind="subtitles" lang="zh">
+    </video>
+    <br>
+    <iframe src="https://player.bilibili.com/player.html?aid=19390801&cid=31621681&page=1" scrolling="no" frameboder="no " framespacing="0 " allowfullscreen="true "> </iframe>
+    <p>改革春风吹满地</p>
+    <br>
+    <iframe src="https://j.map.baidu.com/e4/Glb" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="">Map
+    </iframe>
+    <br>
+    <!--Draw svg-->
+    <svg width="100px" height="100px">
+        <rect width="100%" height="100%" fill="red"/>
+    </svg>
+    <br>
+    <!--responsive iamg-->
+    <img srcset="../Media/door-480w.jpg 480w,
+                 ../media/door-320w.jpg 320w" sizes="(max-width:320px) 320px,
+                (max-width:480px) 480px,540px" src="../Media/door-480w.jpg" alt="Door opened">
+    <br>
+    <picture>
+        <source media="(max-width: 799px)" srcset="../Media/door-320w.jpg">
+        <source media="(min-width: 800px)" srcset="../Media/door-480w.jpg">
+        <img src="../media/door-480w.jpg" alt="Door opened">
+    </picture>
+</body>
+
+</html>
